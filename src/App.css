@@ -12,6 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+body{
+  background-image: linear-gradient(to top left, rgb(0, 54, 83), rgb(28, 132, 184));
+}
 
 .App-header {
   background-color: #282c34;
@@ -36,17 +39,27 @@
     transform: rotate(360deg);
   }
 }
-#preview{
-  width: 700px;
+#previewer{
+  width: 450px;
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid black;
-  padding: 20px;
   border-radius: 10px;
 }
-#preview img{
+#headerer{
   width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #61dafb;
+  font-weight: bold;
+}
+#preview{
+  padding: 20px;
+  background-color: white;
+}
+#preview img{
+  width: 40%;
 }
 #preview li{
   text-align: left;
@@ -64,4 +77,20 @@ th{
 td{
   padding: 3px;
   border: 1px solid black;
+}
+blockquote{
+  color: blue;
+}
+#editor-window{
+  height: 300px;
+  width: 500px;
+  margin: 10px auto 20px auto;
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: white;
+}
+#editor{
+  width: -webkit-fill-available;
+  height: 40vh;
+  border: none;
 }
